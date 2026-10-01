@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://ckb13ndgdxdxs"]
+
+[ext_resource type="Script" uid="uid://dcqkovff53po5" path="res://test/screen/game_screen.gd" id="1_1taiq"]
+
+[node name="GameScreen" type="Control" unique_id=1264199823]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1taiq")
+metadata/_custom_type_script = "uid://bww1rbvvhh2oj"
+
+[node name="Button" type="Button" parent="." unique_id=2125888000]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -65.0
+offset_top = -15.5
+offset_right = 65.0
+offset_bottom = 15.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "ir para o button"

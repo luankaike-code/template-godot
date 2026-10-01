@@ -1,0 +1,6 @@
+class_name Player extends CharacterBody2D
+
+const SPEED = 300.0
+
+func get_direction() -> Vector2:
+	return Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down")

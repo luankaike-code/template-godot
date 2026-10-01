@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bmqdhiihmr4qe"]
+
+[ext_resource type="Script" uid="uid://dskyfacwdwmwx" path="res://templates/screen/screenManager.gd" id="1_r3lxa"]
+
+[node name="Root" type="Node" unique_id=14082188]
+script = ExtResource("1_r3lxa")
+metadata/_custom_type_script = "uid://dskyfacwdwmwx"
