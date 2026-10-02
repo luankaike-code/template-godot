@@ -1,0 +1,1 @@
+class_name ComponentArea2D extends Area2D
