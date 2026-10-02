@@ -1,4 +1,4 @@
-class_name ComponentHealth extends Node
+class_name ComponentHealth extends Component
 
 @export var max_health: float = 20
 @export var current_health: float =  max_health : 

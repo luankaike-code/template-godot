@@ -1,4 +1,4 @@
-class_name ComponentMove extends Node
+class_name ComponentMove extends Component
 
 @export var speed: float = 500.0
 

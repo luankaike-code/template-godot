@@ -1,4 +1,4 @@
-class_name ComponentInput extends Node
+class_name ComponentInput extends Component
 
 var move_dir: Vector2 = Vector2.ZERO
 var action_1_pressed: bool = false
