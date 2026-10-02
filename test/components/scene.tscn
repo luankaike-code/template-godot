@@ -1,7 +1,18 @@
 [gd_scene format=3 uid="uid://daouup0xka3tn"]
 
 [ext_resource type="PackedScene" uid="uid://b1haix7bu5ygv" path="res://test/components/Player.tscn" id="1_4tc7e"]
+[ext_resource type="PackedScene" uid="uid://cyyf5tw3haou5" path="res://test/components/interationObject.tscn" id="2_vejhe"]
 
 [node name="Scene" type="Node2D" unique_id=1164171803]
 
 [node name="Player" parent="." unique_id=1360228723 instance=ExtResource("1_4tc7e")]
+position = Vector2(189, 180)
+
+[node name="InterationObject" parent="." unique_id=1194823551 instance=ExtResource("2_vejhe")]
+position = Vector2(534, 488)
+text = "Hello"
+
+[node name="InterationObject2" parent="." unique_id=2027552391 instance=ExtResource("2_vejhe")]
+modulate = Color(1, 0, 1, 1)
+position = Vector2(210, 491)
+text = "Olá"
