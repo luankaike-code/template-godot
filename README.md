@@ -15,6 +15,8 @@
 - ComponentHealth: controle de vida
 - ComponentInput: Controle de inputs
 - ComponentMove: Controle da movimentação de um CharacterBody2D
+- ComponentInteration: Zona de interação
+- ComponentInterator: Interage com ComponentInteration
 
 ## Outros
 
@@ -23,7 +25,6 @@
 
 ## Roadmap
 
-- Componente para interação
 - Componente para inventario
 - Componente de preseguição de mouse circular (Ex.: arma do Enter the Gungeon)
 - Componentes para inimigos
