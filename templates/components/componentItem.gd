@@ -12,3 +12,18 @@ signal current_state_changed()
 		
 		current_state = new_current_state
 		current_state_changed.emit()
+		
+		if Engine.is_editor_hint():
+			update_configuration_warnings()
+
+func _get_configuration_warnings() -> PackedStringArray:
+	var warnings = super()
+
+	if item_name == "ItemNotNamed!!!":
+		warnings.append("Define the item name")
+
+	return warnings
+
+func _ready() -> void:
+	if Engine.is_editor_hint():
+		update_configuration_warnings()
