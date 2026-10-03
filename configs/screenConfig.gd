@@ -6,6 +6,6 @@ enum Id {
 }
 
 static var packeds: Dictionary[Id, PackedScene] = {
-	Id.Menu: preload("res://test/screen/menuScreen.tscn"),
-	Id.Game: preload("res://test/screen/gameScreen.tscn")
+	Id.Menu: load("uid://dmfos4toqg5li"),
+	Id.Game: load("uid://ckb13ndgdxdxs")
 }
