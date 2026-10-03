@@ -21,7 +21,7 @@ var is_dead: bool = false :
 		if is_dead: died.emit()
 		else: revived.emit()
 
-signal changed_health(current_health: float, max_health: float, is_dead: bool)
+signal changed_health()
 signal died()
 signal revived()
 
