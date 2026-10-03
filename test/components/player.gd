@@ -40,7 +40,6 @@ func drop_all_items() -> void:
 	for item_index in component_inventory.inventory_storage:
 		i += 1
 		var item: ComponentItem = component_inventory.remove_item(item_index)
-		item.current_state = ItemsConfig.ItemStates.OnWorld
 		var item_parent: Node2D = item.get_parent()
 		item_parent.global_position = global_position + Vector2(10, 10) * i
 
@@ -54,8 +53,6 @@ func _interate() -> void:
 	
 	if interation_parent is Item:
 		var component_item: ComponentItem = interation_parent.pick_up()
-		var result = component_inventory.stock_up(component_item, 2)
-		if result: 
-			component_item.current_state = ItemsConfig.ItemStates.OnInventory
+		component_inventory.stock_up(component_item, 2)
 	else:
 		interation.interate()
