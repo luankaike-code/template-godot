@@ -8,9 +8,15 @@ extends CharacterBody2D
 func _ready() -> void:
 	component_health.revived.connect(func(): print("revived"))
 	component_health.died.connect(func(): print("deaded"))
-	component_health.changed_health.connect(
-		func(current_health: float, max_health: float, is_dead: bool): 
-			print("changed health - %d / %d / %d" % [current_health, max_health, int(is_dead)])
+	component_health.changed_health.connect(on_changed_health)
+
+func on_changed_health() -> void:
+	print("changed health - %d / %d / %d"  % \
+		[
+			component_health.current_health,
+			component_health.max_health, 
+			int(component_health.is_dead)
+		]
 	)
 
 func _physics_process(_delta: float) -> void:
@@ -21,6 +27,10 @@ func _physics_process(_delta: float) -> void:
 	if component_input.action_2_pressed:
 		component_health.take_damage(5)
 	if component_input.action_3_pressed:
-		component_interator.interate()
+		_interate()
+	
 	component_move.direction = component_input.move_dir
 	component_move.tick()
+
+func _interate() -> void:
+	component_interator.interate()
