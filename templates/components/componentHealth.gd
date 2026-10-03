@@ -7,7 +7,7 @@ class_name ComponentHealth extends Component
 		
 		is_dead = current_health == 0.0
 		
-		changed_health.emit(current_health, max_health, is_dead)
+		changed_health.emit()
 
 var _old_is_dead: bool = false
 var is_dead: bool = false :
