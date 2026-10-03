@@ -1,3 +1,4 @@
+@tool
 class_name ComponentInput extends Component
 
 var move_dir: Vector2 = Vector2.ZERO

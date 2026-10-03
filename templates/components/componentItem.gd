@@ -1,3 +1,4 @@
+@tool
 class_name ComponentItem extends Component
 
 @export var item_name: String = "ItemNotNamed!!!"

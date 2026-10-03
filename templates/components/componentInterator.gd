@@ -1,3 +1,4 @@
+@tool
 class_name ComponentInterator extends ComponentArea2D
 
 func interate() -> void:

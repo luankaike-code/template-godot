@@ -1,3 +1,4 @@
+@tool
 class_name ComponentHealth extends Component
 
 @export var max_health: float = 20

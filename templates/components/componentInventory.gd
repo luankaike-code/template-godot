@@ -1,3 +1,4 @@
+@tool
 class_name ComponentInventory extends Component
 
 @export var inventory_space: int = -1
