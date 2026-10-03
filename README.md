@@ -1,6 +1,6 @@
 # template-godot
 
-## Adição ao Mapa de teclas
+## Adição ao Mapa de Teclas
 
 - move_up: W
 - move_down: S
@@ -12,11 +12,13 @@
 
 ## Componentes
 
-- ComponentHealth: controle de vida
+- ComponentHealth: Controle de vida
 - ComponentInput: Controle de inputs
 - ComponentMove: Controle da movimentação de um CharacterBody2D
 - ComponentInteration: Zona de interação
-- ComponentInterator: Interage com ComponentInteration
+- ComponentInterator: Interage com Component Interation
+- ComponentItem: Item
+- ComponentInventory: Inventário
 
 ## Outros
 
@@ -25,6 +27,5 @@
 
 ## Roadmap
 
-- Componente para inventario
 - Componente de preseguição de mouse circular (Ex.: arma do Enter the Gungeon)
 - Componentes para inimigos
