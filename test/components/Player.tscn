@@ -29,7 +29,7 @@ metadata/_custom_type_script = "uid://dy41vwu31x3s2"
 [node name="ComponentHealth" type="Node" parent="." unique_id=60648872]
 unique_name_in_owner = true
 script = ExtResource("3_7uldq")
-max_health = null
+current_health = 20.0
 metadata/_custom_type_script = "uid://vfq4mt77crif"
 
 [node name="ComponentMove" type="Node" parent="." unique_id=1249560283 node_paths=PackedStringArray("body")]
