@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dkgos5e624awl" path="res://test/components/player.gd" id="1_8xng7"]
 [ext_resource type="Script" uid="uid://dy41vwu31x3s2" path="res://templates/components/componentInput.gd" id="2_gvbxt"]
+[ext_resource type="Script" uid="uid://cb82y61dccc1r" path="res://templates/components/componentInventory.gd" id="2_lhd4m"]
 [ext_resource type="Script" uid="uid://vfq4mt77crif" path="res://templates/components/componentHealth.gd" id="3_7uldq"]
 [ext_resource type="Script" uid="uid://infht23ash2m" path="res://templates/components/componentMove.gd" id="3_q57t0"]
 [ext_resource type="Texture2D" uid="uid://crn86ir408gcd" path="res://icon.svg" id="4_gvbxt"]
@@ -15,6 +16,10 @@ radius = 130.31117
 
 [node name="Player" type="CharacterBody2D" unique_id=1410912080]
 script = ExtResource("1_8xng7")
+
+[node name="ComponentInventory" type="Node" parent="." unique_id=1717028066]
+script = ExtResource("2_lhd4m")
+metadata/_custom_type_script = "uid://cb82y61dccc1r"
 
 [node name="ComponentInput" type="Node" parent="." unique_id=703022205]
 unique_name_in_owner = true
@@ -48,3 +53,5 @@ metadata/_custom_type_script = "uid://bffpk5acopvac"
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="ComponentInterator" unique_id=1535458674]
 unique_name_in_owner = true
 shape = SubResource("CircleShape2D_xu75h")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1646964987]

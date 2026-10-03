@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://b1haix7bu5ygv" path="res://test/components/Player.tscn" id="1_4tc7e"]
 [ext_resource type="PackedScene" uid="uid://cyyf5tw3haou5" path="res://test/components/interationObject.tscn" id="2_vejhe"]
+[ext_resource type="PackedScene" uid="uid://bjwu2li7h0ev7" path="res://test/components/items/swordItem.tscn" id="3_qu4ce"]
 
 [node name="Scene" type="Node2D" unique_id=1164171803]
 
@@ -16,3 +17,6 @@ text = "Hello"
 modulate = Color(1, 0, 1, 1)
 position = Vector2(210, 491)
 text = "Olá"
+
+[node name="SwordItemOnWorld" parent="." unique_id=568980343 instance=ExtResource("3_qu4ce")]
+position = Vector2(-156, 327)
