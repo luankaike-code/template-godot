@@ -1,23 +1,28 @@
 @tool
 class_name ComponentMove extends Component
 
-signal body_changed()
-
 @export var speed: float = 500.0
 
 @export var body: CharacterBody2D:
 	set(new_body):
 		body = new_body
-		body_changed.emit()
+		if Engine.is_editor_hint():
+			update_configuration_warnings()
 
 var direction: Vector2 = Vector2.ZERO
 
+func _get_configuration_warnings() -> PackedStringArray:
+	var warnings = super()
+
+	if !body:
+		warnings.append("Define body")
+
+	return warnings
+
 func _ready() -> void:
-	Editor.is_
+	if Engine.is_editor_hint():
+		update_configuration_warnings()
 
 func tick() -> void:
-	if !body:
-		print("ComponentMove: Body not defined")
-
 	body.velocity = direction * speed
 	body.move_and_slide()
