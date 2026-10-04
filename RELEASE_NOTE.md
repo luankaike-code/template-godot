@@ -1,6 +1,10 @@
-# TEMPLATE-GODOT
+# REALEASE NOTE v0.1.0
 
-## Adição ao Mapa de Teclas
+Primeira versão
+
+## Adições
+
+### Mapa de Teclas
 
 - move_up: W
 - move_down: S
@@ -10,7 +14,7 @@
 - action_2: X
 - action_3: C
 
-## Componentes
+### Componentes
 
 - ComponentHealth: Controle de vida
 - ComponentInput: Controle de inputs
@@ -20,12 +24,7 @@
 - ComponentItem: Item
 - ComponentInventory: Inventário
 
-## Sistemas
+### Sistemas
 
-- Sistema completo de gerenciamento de tela
-- Sistema completo para maquinas de estados finitas
-
-## Roadmap
-
-- Componente de preseguição de mouse circular (Ex.: arma do Enter the Gungeon)
-- Componentes para inimigos
+- Gerenciamento de tela
+- Maquinas de estados finitas

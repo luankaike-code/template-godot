@@ -1,4 +1,5 @@
-class_name ComponentHealth extends Node
+@tool
+class_name ComponentHealth extends Component
 
 @export var max_health: float = 20
 @export var current_health: float =  max_health : 
@@ -7,7 +8,7 @@ class_name ComponentHealth extends Node
 		
 		is_dead = current_health == 0.0
 		
-		changed_health.emit(current_health, max_health, is_dead)
+		changed_health.emit()
 
 var _old_is_dead: bool = false
 var is_dead: bool = false :
@@ -21,7 +22,7 @@ var is_dead: bool = false :
 		if is_dead: died.emit()
 		else: revived.emit()
 
-signal changed_health(current_health: float, max_health: float, is_dead: bool)
+signal changed_health()
 signal died()
 signal revived()
 

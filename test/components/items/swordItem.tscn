@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bjwu2li7h0ev7"]
+
+[ext_resource type="Script" uid="uid://dkcg0vsufsmsx" path="res://test/components/items/sword_item.gd" id="1_3lfr3"]
+[ext_resource type="Script" uid="uid://coqeoohdfib1v" path="res://templates/components/componentItem.gd" id="1_sbp48"]
+[ext_resource type="Script" uid="uid://cfnnbhot5p2oy" path="res://templates/components/componentInteration.gd" id="3_pmrym"]
+[ext_resource type="Texture2D" uid="uid://crn86ir408gcd" path="res://icon.svg" id="4_1ulhj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kis1t"]
+radius = 24.020824
+
+[node name="SwordItem" type="Node2D" unique_id=568980343 node_paths=PackedStringArray("component_item")]
+script = ExtResource("1_3lfr3")
+component_item = NodePath("ComponentItem")
+metadata/_custom_type_script = "uid://dc54drlme0qyk"
+
+[node name="ComponentItem" type="Node" parent="." unique_id=1687319077]
+script = ExtResource("1_sbp48")
+item_name = "Sword"
+current_state = 1
+metadata/_custom_type_script = "uid://coqeoohdfib1v"
+
+[node name="ComponentInteration" type="Area2D" parent="." unique_id=661547406]
+script = ExtResource("3_pmrym")
+metadata/_custom_type_script = "uid://cfnnbhot5p2oy"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ComponentInteration" unique_id=192023528]
+shape = SubResource("CircleShape2D_kis1t")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=725559171]
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("4_1ulhj")

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://cyyf5tw3haou5"]
+
+[ext_resource type="Script" uid="uid://dl4y10gygdtie" path="res://test/components/interation_object.gd" id="1_arhv7"]
+[ext_resource type="Texture2D" uid="uid://crn86ir408gcd" path="res://icon.svg" id="2_nckki"]
+[ext_resource type="Script" uid="uid://cfnnbhot5p2oy" path="res://templates/components/componentInteration.gd" id="3_ppkt3"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_xu75h"]
+radius = 148.66069
+
+[node name="InterationObject" type="Node2D" unique_id=1194823551]
+script = ExtResource("1_arhv7")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1662323981]
+modulate = Color(1, 1, 0, 1)
+texture = ExtResource("2_nckki")
+
+[node name="ComponentInteration" type="Area2D" parent="." unique_id=1578331571]
+script = ExtResource("3_ppkt3")
+metadata/_custom_type_script = "uid://cfnnbhot5p2oy"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ComponentInteration" unique_id=401500513]
+shape = SubResource("CircleShape2D_xu75h")
